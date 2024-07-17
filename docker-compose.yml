@@ -1,10 +1,10 @@
 version: '3.3'
 services:
-  db:
-    image: mysql:5.7
+  bb-nest-mysql:
+    image: mysql:9
     restart: always
     environment:
-      MYSQL_DATABASE: 'test'
+      MYSQL_DATABASE: 'bb_nest'
       MYSQL_USER: 'user'
       MYSQL_PASSWORD: 'secret'
       MYSQL_ROOT_PASSWORD: 'secret'
