@@ -12,7 +12,7 @@ export const AppDataSource = new DataSource({
   database: process.env.DB_NAME,
   logging: true,
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
-  migrations: ['src/migrations/**/*{.ts,.js}'],
+  migrations: ['src/typeorm/migrations/**/*{.ts,.js}'],
   migrationsTableName: 'migrations',
   migrationsRun: false,
   synchronize: false,
